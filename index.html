@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    
+       <button onclick="colors('white')" id="white"></button>
+       <button onclick="colors('black')"  id="black"></button>
+        <button onclick="colors('img')"  id="dragon"></button>
+        <button onclick="colors('vid')" class="bottom"  id="ocean"></button>
+        <button onclick="colors('cap')" class="bottom"   id="cap"></button>
+        <video id="vid" autoplay loop muted playsinline></video>
+        <video id="vid2" autoplay loop muted playsinline></video>
+        <video id="vid3" autoplay loop muted playsinline></video>
+        <img id="capi"/>
+        
+
+
+    <main>
+        <input type="text" class="paragrafo" disabled>
+         <button class="zero" onclick="del()">C</button>
+        <button class="zero" onclick="primeiro('+')">+</button>
+        <button class="zero" onclick="primeiro('-')">-</button>
+        <button class="zero" onclick="primeiro('*')">x</button>
+        <button class="zero" onclick="primeiro(7)">7</button>
+        <button class="zero" onclick="primeiro(8)">8</button>
+        <button class="zero" onclick="primeiro(9)">9</button>
+         <button class="zero" onclick="primeiro('/')">÷</button>
+        <button class="zero" onclick="calc()" id="igual">=</button>
+        <button class="zero" onclick="primeiro(4)">4</button>
+        <button class="zero" onclick="primeiro(5)">5</button>
+        <button class="zero" onclick="primeiro(6)">6</button>
+        <button class="zero" onclick="primeiro(1)">1</button>
+        <button class="zero" onclick="primeiro(2)">2</button>
+        <button class="zero" onclick="primeiro(3)">3</button>
+        <button class="zero" onclick="primeiro(0)">0</button>
+            <button class="zero" onclick="primeiro('.')">.</button>
+       
+        <button class="zero"  src="./assets/d7150514dc585f1629238a15c14b550b.jpg" onclick="apagar()">⌫</button>
+
+    </main>
+ 
+
+</body>
+<script src="./script.js"></script>
+
+</html>

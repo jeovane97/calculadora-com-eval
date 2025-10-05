@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    max-width: 670px;
+    width: 100%;
+    border: none;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+    max-height: 700px;
+    height: 100%;
+    background-color: rgb(121 172 250);
+   margin-bottom: auto;
+   margin-top: auto;
+}
+
+input {
+
+    grid-column: 1/5;
+    text-align: right;
+    font-size: 50px;
+    color: black;
+}
+
+button {
+    font-size: 40px;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(23, 141, 141);
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+#igual {
+    grid-row: 4/7;
+    grid-column: 4;
+}
+
+#white{
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  
+    background-color: rgb(240, 245, 248);
+}
+#black{
+     border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: rgb(12, 6, 6);  
+}
+#dragon{
+border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+ 
+    background-color: rgb(43, 6, 135);
+}
+video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: none;
+    top:0;
+    left: 0;
+}
+
+#ocean{
+border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+ 
+    background-color: rgb(32, 183, 220);
+}
+#cap{
+border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 260px;
+    left: 20px;
+ 
+    background-color: rgb(199, 242, 28);
+}
+
+@media screen and (max-width:833px ) {
+   
+    input{
+        font-size: 30px;
+    }
+    #black{
+        top: 20px;
+        left: 80px;
+        
+    }
+     #dragon{
+        top: 20px;
+        left: 140px;
+        
+    }
+     .bottom{
+       margin-top: 70vh;
+        display: flex;
+        flex-direction: row;
+    }
+    #cap{
+        left: 80px;
+        top:5em;
+    }
+
+}
+@media screen and (max-height:833px ){
+    main{
+        max-height: 500px;
+    }
+}
+@media screen and (max-height:700px ){
+    main{
+        margin-top: 70px;
+    }
+}
